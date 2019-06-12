@@ -74,3 +74,8 @@ sudo systemctl restart apache2
 14. Open localhost/grav or 127.0.0.1/grav in the browser.
 
 > In case the site redirect from http to https, change "force_ssl: true" to "force_ssl: false" in grav/user/config/system.yaml
+> This might come to handy
+```sh
+cd grav
+sudo chown www-data:www-data -R .
+```
