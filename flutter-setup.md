@@ -20,8 +20,15 @@
 8. touch ~/.android/repositories.cfg
 9. sdkmanager "system-images;android-28;google_apis_playstore;x86_64" "platforms;android-28" "build-tools;28.0.3"
 10. avdmanager -v create avd -n "Android-Pie" -k "system-images;android-28;google_apis_playstore;x86_64" -f
-11. emulator -avd Android-Pie
+11. emulator @Android-Pie -netdelay none -no-snapshot -wipe-data -qemu -m 2047 -enable-kvm
 12. flutter doctor -v
+
+# OR USE GENYMOTION
+1. sudo apt-get install virtualbox -y
+2. download the Genymotion Linux package from https://www.genymotion.com/download/
+3. chmod +x genymotion-3.0.2-linux_x64.bin
+4. ./genymotion-3.0.2-linux_x64.bin
+5. run genymotion
 
 # SOURCES
 1. https://flutter.dev/docs/get-started/install/linux
