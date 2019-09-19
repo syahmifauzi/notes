@@ -13,9 +13,9 @@
 4. wget https://dl.google.com/android/repository/platform-tools-latest-linux.zip
 5. unzip platform-tools-latest-linux.zip
 6. vim ~/.bashrc
-  >> export ANDROID_SDK_ROOT="$HOME/development/android-sdk"
-  >> export ANDROID_HOME=$ANDROID_SDK_ROOT
-  >> export PATH="$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools"
+  > export ANDROID_SDK_ROOT="$HOME/development/android-sdk"
+  > export ANDROID_HOME=$ANDROID_SDK_ROOT
+  > export PATH="$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools"
 7. sudo apt install openjdk-8-jdk openjdk-8-jre
 8. touch ~/.android/repositories.cfg
 9. sdkmanager "system-images;android-28;google_apis_playstore;x86_64" "platforms;android-28" "build-tools;28.0.3"
